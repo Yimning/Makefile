@@ -4,7 +4,7 @@ VERSION  = 1.0.0
 MFLAGS = "CFLAGS=-w"
 DFLAGS = "CFLAGS=-w -g -fPIC -DDEBUG -DREENTRANT"
 
-
+    
 #如果想编译静态库 指定TARGET_AR=1即可	
 all :
 	cd $(PROJECT_ROOT_PATH)/src/bar && $(MAKE) $(DFLAGS) TARGET_SO=1 && $(MAKE) install TARGET_SO=1		
